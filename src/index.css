@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  @apply font-sans;
+}
+
+@keyframes gradient-shift {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+
+.animate-gradient {
+  background: linear-gradient(270deg, #A855F7, #EC4899, #F472B6);
+  background-size: 600% 600%;
+  animation: gradient-shift 10s ease infinite;
+}
+
